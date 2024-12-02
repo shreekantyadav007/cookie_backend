@@ -22,7 +22,7 @@ app.get("/set-cookie", (req, res) => {
 });
 
 app.get("/get-cookie", (req, res) => {
-  const userCookie = req.cookies;
+  const userCookie = req.cookies.user;
   if (userCookie) {
     res
       .status(200)
