@@ -9,7 +9,7 @@ app.use(exprss.json());
 app.use(cookieParser());
 app.use(
     cors({
-        origin: 'http://localhost:5173', // Specify frontend URL
+        origin: 'https://relaxed-queijadas-3c7c38.netlify.app', // Specify frontend URL
         credentials: true, // Allow credentials (cookies)
     })
 );
