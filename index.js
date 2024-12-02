@@ -7,7 +7,12 @@ const port = 3000;
 
 app.use(exprss.json());
 app.use(cookieParser());
-app.use(cors({ origin: "http://localhost:5173", withCredentials: "true" }));
+app.use(
+    cors({
+        origin: 'http://localhost:5173', // Specify frontend URL
+        credentials: true, // Allow credentials (cookies)
+    })
+);
 
 //Route to set a cookie
 
